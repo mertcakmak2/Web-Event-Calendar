@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="../Css/jquery-3.4.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../Css/calendar.css">
+  <script src="../Controller/homepage.js"></script>
+  <script src="../Model/calendar.js"></script>
+  <script src="../Model/databasehandler.js"></script>
+</head>
+
+<body >
+  <div>
+
+    <div class="divcalendar">
+      <div id="header">
+        <div id="calendarmonthcontrols">
+          <a id="btnPrevYr" href="#" title="Previous Year"><span><img src="../Css/oncekiyil.png"></span></a>
+          <a id="btnPrev" href="#" title="Previous Month"><span><img src="../Css/solok.png"></span></a>
+          <div id="monthandyear"></div>
+          <a id="btnNext" href="#" title="Next Month"><span><img src="../Css/sagok.png"></span></a>
+          <a id="btnNextYr" href="#" title="Next Year"><span><img src="../Css/sonrakiyil.png"></span></a>
+        </div>
+      </div>
+      <div id="divcalendartable"></div>
+    </div>
+
+    <div class="notes">
+        <h1 id="notesHead">EVENTS</h1>
+
+        <div class="row " style="max-height: 80vh !important">
+          <table id="notlar" class="table table-hover table-responsive" >
+              <tbody id="tablonot">
+              </tbody>
+          </table>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+      <h1>Not Formu</h1>
+  
+      <input type="text" id="note" placeholder="Notunuzu Girin.">
+ 
+      <button type="button" class="btn" onclick="noteAdd()">Not Ekle</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">kapat</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+html, body { 
+  font-family: 'Montserrat' ;
+  margin: 0; padding: 0; 
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  font-family: Georgia, Times, serif;
+}
+
+input[type=button] {
+  font-family: 'Montserrat' ;
+  background-color: #e15f41;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input[type=button]:hover{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+th {
+  border: 1px solid #A8A8A8;
+  vertical-align: top;
+}
+
+td {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #A8A8A8;
+  vertical-align: top;
+}
+
+.divcalendar {
+  padding-left: 28px;
+    float:left;
+}
+
+/* Wrapper div. That makes the inner div into an inline element that can be centered with text-align.*/
+#header {
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+/* This is a fluid div as width will be changing */
+#calendarmonthcontrols {
+  display: inline-block;
+}
+
+#calendarmonthcontrols > div, #calendarmonthcontrols > a {
+    display: inline-block;
+}    
+
+#btnPrevYr {
+  text-decoration: none;
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+#btnPrev {
+  text-decoration: none;
+  font-size: 35px;
+  margin-left: 20px;
+  vertical-align: middle;
+}    
+
+#monthandyearspan {
+  width: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}    
+
+#monthandyear {
+  vertical-align: middle;
+  background-color:#17c0eb;
+}
+
+#btnNext {
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#btnNextYr {
+  text-decoration: none;
+  font-size: 35px;
+  vertical-align: middle;
+}        
+
+#divcalendartable {
+  clear: both;
+}
+
+.daysheader {
+  font-family: 'Montserrat' ;
+  background: slategray;
+  height: auto;
+  text-align: center;
+}
+
+#prevmonthdates {
+  font-family: 'Montserrat' ;
+  background-color: #32ff7e;
+}
+
+#nextmonthdates {
+  font-family: 'Montserrat' ;
+  background-color:#4b4b4b;
+}
+
+#currentmonthdates {
+  background-color: #FFFFFF;
+}
+
+#cellvaluespan {
+  background: #FF0000;
+}
+
+#cellvaluelist {
+  background: #FFCC00;
+}        
+
+.swim {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  text-align: center;
+  background: #445511;
+  color: #F5F5F5;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.chrono {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
+  text-align: center;
+  background: #778899;
+  color: #F5F5F5;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.notes{
+  text-align: center;
+  margin-right: 250px;
+  float: right;
+  width: 380px;
+  height: 590px;
+  background-color: #ff9f1a;
+}
+
+#notesHead{
+  padding-top: 30%;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#tablonot td{
+  font-family: 'Montserrat';
+  height: 15px;
+  width: 200px;
+  padding: 8px;
+  border: 0;
+  float: left;
+}
+
+#tablonot td::first-letter{
+  text-transform: uppercase;
+}
+
+.row{
+ height: 200px;
+}
+.degisen{
+  background-color: #FFCC00;
+}
